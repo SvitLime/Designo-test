@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Poppins:wght@300;400;600;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <section class="container flex">
+            <a class="logo" href="./index.html"><img class="header__logo" src="./assets/images/logo-light.png" alt="logo Designo company"></a>
+            <nav>
+                <ul class="menu header__menu flex">
+                    <li><a href="./about-us.html">OUR COMPANY</a></li>
+                    <li><a href="./local.html">LOCATIONS</a></li>
+                    <li><a href="./contact-us.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="burger dropbtn" type="button"></button>
+                <div id="myDropdown" class="myDropdown dropdown-content">
+                    <nav class="dropdown__link">
+                        <a href="./about-us.html">OUR COMPANY</a>
+                        <a href="./local.html">LOCATIONS</a>
+                        <a href="./contact-us.html">CONTACT</a>
+                    </nav>
+                    <div class="myMain"></div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="locations locations__canada flex" id="canada">
+                <div class="locations__item">
+                    <h2>Canada</h2>
+                    <div class="locations__item-adress">
+                        <div class="locations__text">
+                            <h3>Designo Central Office</h3>
+                            <p>3886 Wellington Street</p>
+                            <p>Toronto, Ontario M9C 3J5</p>
+                        </div>
+                        <div class="locations__tel">
+                            <h3>Contact</h3>
+                            <a href="tel:+12538638967">P : +1 253-863-8967</a>
+                            <a href="mailto:contact@designo.co">M : contact@designo.co</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-div">
+                    <iframe class="locations__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1993724560734!2d-79.39711432452434!3d43.64402015302562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d9a0737d9f%3A0xbc1ae74f23fabf4e!2zV2VsbGluZ3RvbiBTdCBXLCBUb3JvbnRvLCBPTiwg0JrQsNC90LDQtNCw!5e0!3m2!1suk!2sua!4v1702725840647!5m2!1suk!2sua"
+                        width="326" height="326" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+            <section class="locations flex" id="australia">
+                <div class="map-div">
+                    <iframe class="locations__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.7582378234156!2d149.7856649750492!3d-30.32939384454811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ba73450a680702d%3A0x44a309bd6607346e!2zMTkgQmFsb25uZSBTdCwgTmFycmFicmkgTlNXIDIzOTAsINCQ0LLRgdGC0YDQsNC70ZbRjw!5e0!3m2!1suk!2sua!4v1702727374432!5m2!1suk!2sua"
+                        width="326" height="326" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="locations__item">
+                    <h2>Australia</h2>
+                    <div class="locations__item-adress">
+                        <div class="locations__text">
+                            <h3>Designo AU Office</h3>
+                            <p>19 Balonne Street</p>
+                            <p>New South Wales 2443</p>
+                        </div>
+                        <div class="locations__tel">
+                            <h3>Contact</h3>
+                            <a href="tel:+0267209092">P : (02) 6720 9092</a>
+                            <a href="mailto:contact@designo.au">M : contact@designo.au</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="locations locations__unki flex" id="unki">
+                <div class="locations__item">
+                    <h2>United Kingdom</h2>
+                    <div class="locations__item-adress">
+                        <div class="locations__text">
+                            <h3>Designo UK Office</h3>
+                            <p>13 Colorado Way</p>
+                            <p>Rhyd-y-fro SA8 9GA</p>
+                        </div>
+                        <div class="locations__tel">
+                            <h3>Contact</h3>
+                            <a href="tel:+07831151400">P : 078 3115 1400</a>
+                            <a href="mailto:contact@designo.uk">M : contact@designo.uk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-div">
+                    <iframe class="locations__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.7034718377877!2d-3.8839967239989353!3d51.93936207905651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e54bef44dfc55%3A0x7399aa9172f62c5d!2zMTMgUmh5ZC1ZLUZybywgTGxhbmdhZG9nIFNBMTkgOUhXLCDQktC10LvQuNC60LAg0JHRgNC40YLQsNC90ZbRjw!5e0!3m2!1suk!2sua!4v1702728404304!5m2!1suk!2sua"
+                        width="326" height="326" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+        
+        
+    </main>
+    <footer class="footer">
+        <section class="container">
+            <article class="touch flex">
+                <div class="touch__text">
+                    <h2>
+                        Let’s talk about&nbsp;your project
+                    </h2>
+                    <p>
+                        Ready to take it to the next level? Contact us today and find out
+                        how our expertise can help your business grow.
+                    </p>
+                </div>
+                <a href="./contact-us.html">
+                    Get in touch
+                </a>
+            </article>
+            <section class="footer__content flex">
+                <a class="logo" href="./index.html"><img class="header__logo" src="./assets/images/logo-dark.png" alt="logo Designo company"></a>
+                <ul class="footer__menu flex">
+                    <li><a href="./about-us.html">OUR COMPANY</a></li>
+                    <li><a href="./local.html">LOCATIONS</a></li>
+                    <li><a href="./contact-us.html">CONTACT</a></li>
+                </ul>
+            </section>
+            <section class="info flex">
+                <article class="info__item">
+                    <h2>Designo Central Office</h2>
+                    <p>3886 Wellington Street</p>
+                    <p>Toronto, Ontario M9C 3J5</p>   
+                </article>
+                <article class="info__item contact">
+                    <h2>Contact Us (Central Office)</h2>
+                    <a href="tel:+12538638967">P : +1 253-863-8967</a>
+                    <a href="mailto:contact@designo.co">M : contact@designo.co</a>
+                </article>
+                <article class="contact__icons">
+                    <a href="#">
+                        <svg class="info__item-icon">
+                            <use href="./assets/images/symbols.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="info__item-icon">
+                            <use href="./assets/images/symbols.svg#icon-yt"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="info__item-icon">
+                            <use href="./assets/images/symbols.svg#icon-twit"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="info__item-icon">
+                            <use href="./assets/images/symbols.svg#icon-pin"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="info__item-icon">
+                            <use href="./assets/images/symbols.svg#icon-inst"></use>
+                        </svg>
+                    </a>
+                </article>
+            </section>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
