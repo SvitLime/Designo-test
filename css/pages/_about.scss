@@ -1,0 +1,322 @@
+.about-page{
+    background: url(../assets/images/body_bg_top.png), url(../assets/images/about/about-bg-down.png);
+    background-repeat: no-repeat;
+    background-position: left top 320px, right bottom 388px;
+    @media screen and (max-width: 768px) {
+        background: none;
+    }
+}
+
+.about-info {
+    background: url(../assets/images/about/about-cirlce.png) #E7816B;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    max-height: 480px;
+    border-radius: 15px;
+    margin-bottom: 160px;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        min-height: 632px;
+        justify-content: flex-end;
+        background-position: right 123px top -90px;
+        margin-bottom: 120px;
+    }
+    @media screen and (max-width: 480px) {
+        min-height: 715px;
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width: 375px) {
+        border-radius: 0;
+        margin-bottom: 0px;
+    }
+
+    & img{
+        border-radius: 0 15px 15px 0;
+        @media screen and (max-width: 768px) {
+            // max-height: 320px;
+            display: none;
+        }
+        
+    }
+
+    &__text{
+        width: 50%;
+        color: #ffff;
+        padding: 0 0 0 95px;
+        @media screen and (max-width: 768px) {
+            width: fit-content;
+            text-align: center;
+            padding: 0 52px;
+        }
+        @media screen and (max-width: 480px) {  
+            padding: 0 24px;
+        }
+        & h2{
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 32px;
+            @media screen and (max-width: 768px) {
+                margin-top: 64px;
+                margin-bottom: 24px;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 32px;
+                line-height: 36px;
+                margin-top: 80px;
+            }
+        }
+        & p{
+            margin-bottom: 32px;
+            @media screen and (max-width: 480px) {
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    .image-first {
+        display: none;
+        @media screen and (max-width: 768px) {
+            border-radius: 15px 15px 0 0;
+            position: relative;
+            display: block;
+            min-height: 320px;
+            width: 100%;
+            background: url(../assets/images/about/faceit-tablet.png);
+        }
+        @media screen and (max-width: 480px) {
+           background: url(../assets/images/about/faceit-mobile.png);
+        }
+        @media screen and (max-width: 375px) {
+           border-radius: 0px;
+        }
+    }
+    
+}
+
+
+.about-info__item{
+    border-radius: 15px;
+    margin-bottom: 160px;
+    background: url(../assets/images/about/group.png) #FDF3F0;
+    background-repeat: no-repeat;
+    background-position: 330px bottom;
+    @media screen and (max-width: 768px) {
+        background-position: left 97px bottom 60px;
+        margin-bottom: 120px;
+    }
+    @media screen and (max-width: 375px) {
+        border-radius: 0;
+    }
+    & img {
+        border-radius:  15px 0 0 15px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .image-second{
+        display: none;
+        @media screen and (max-width: 768px) {
+            border-radius: 15px 15px 0 0;
+            display: block;
+            min-height: 320px;
+            width: 100%;
+            background: url(../assets/images/about/talent-tablet.png);
+        }
+        @media screen and (max-width: 480px) {
+            display: block;
+            background: url(../assets/images/about/talent-mobile.png);
+        }
+        @media screen and (max-width: 375px) {
+            border-radius: 0;
+        }
+    }
+}
+
+.about-info__item-text{
+    width: 50%;
+    padding: 0 95px 0 10px;
+    & h2{
+        color: #E7816B;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 32px;
+        @media screen and (max-width: 480px) {
+            font-size: 32px;
+            line-height: 36px;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+    }
+    & p{
+        margin-bottom: 32px;
+        @media screen and (max-width: 480px) {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 0px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        width: fit-content;
+        padding: 68px 52px;
+        text-align: center;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 80px 24px;
+
+    }
+    
+}
+
+.location{
+    margin-bottom: 160px;
+    @media screen and (max-width: 480px) {
+        margin-bottom: 120px;
+    }
+    
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            gap: 80px;
+        }
+        @media screen and (max-width: 480px) {
+            gap: 48px;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 350px;
+
+        & img{
+            margin-bottom: 48px;
+        }
+
+        & h2{
+            color: #333136;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 5px;
+
+            margin-bottom: 32px;
+        }
+
+        & a{
+            color: #fff;
+            text-align: center;
+
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: #E7816B;
+
+            padding: 18px 18.5px;
+
+            border-radius: 8px;
+
+            transition: background-color .5s;
+        }
+        & a:hover{
+            background-color: #FFAD9B;
+        }
+    }
+}
+
+
+.real-deal{
+    border-radius: 15px;
+    margin-bottom: 380px;
+    background: url(../assets/images/about/real-deal.png) #FDF3F0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        text-align: center;
+        background-position: left 97px bottom 60px;
+    }
+    @media screen and (max-width: 375px) {
+        border-radius: 0;
+    }
+
+    & img {
+        border-radius:  0 15px 15px 0;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__text{
+        width: 50%;
+        padding: 0 10px 0 95px;
+        @media screen and (max-width: 768px) {
+            width: fit-content;
+            padding: 68px 52px;
+        }
+        @media screen and (max-width: 480px) {
+
+            padding: 80px 24px;
+        }
+
+        & h2{
+            color: #E7816B;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 32px;
+            @media screen and (max-width: 480px) {
+                font-size: 32px;
+                line-height: 36px;
+                margin-top: 0;
+                margin-bottom: 24px;
+            }
+        }
+        & p{
+            margin-bottom: 32px;
+            @media screen and (max-width: 480px) {
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .image-deal{
+        display: none;
+        @media screen and (max-width: 768px) {
+            border-radius: 15px 15px 0 0;
+            position: relative;
+            display: block;
+            min-height: 320px;
+            width: 100%;
+            background: url(../assets/images/about/deal-tablet.png);
+        }
+        @media screen and (max-width: 480px) {
+            border-radius: 15px 15px 0 0;
+            background: url(../assets/images/about/deal-mobile.png);
+        }
+        @media screen and (max-width: 375px) {
+            border-radius: 0;
+        }
+    }
+}

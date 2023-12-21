@@ -1,0 +1,92 @@
+/* web desing  */
+
+.main__web-desing {
+    background: url(../assets/images/body_bg_top.png);
+    background-repeat: no-repeat;
+    background-position: left top 126px;
+    @media screen and (max-width: 768px) {
+        background: none;
+    }
+}
+
+.web-desing div.products__content-item {
+    flex-direction: row;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.web-desing__touch {
+    background: url(../assets/images/web-circle.png) #E7816B;
+    background-repeat: no-repeat;
+    background-position: right center; 
+    @media screen and (max-width: 480px) {
+        background-size: cover;
+        padding: 0 24px;
+    }
+}
+
+.main__touch{
+    /* max-width: 1110px; */
+    margin-bottom: 160px;
+    width: 100%;
+    border-radius: 15px;
+    min-height: 252px;
+    color: #FFF;
+
+    padding: 0 95px;
+    column-gap: 300px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 120px;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 0 24px;
+        margin-bottom: 96px;
+        min-height: 320px;
+        min-width: 375px;
+    }
+    @media screen and (max-width: 375px) {
+        border-radius: 0;
+    }
+}
+
+.main__touch h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 24px;
+    @media screen and (max-width: 768px) {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+.main__touch p {
+    min-width: 409px;
+    @media screen and (max-width: 768px) {
+        min-width: fit-content;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+}
+
+
+.web-desing section.products {
+    min-height: 848px;
+    align-items: flex-start;
+    padding-top: 160px;
+    @media screen and (max-width: 768px) {
+        padding-top: 120px;
+        padding-bottom: 384px;
+        min-height: fit-content;
+    }
+}
