@@ -12,8 +12,6 @@
             align-items: center;
         }
     }
-
-    
 }
 
 .contact-us-page{
@@ -144,9 +142,6 @@
             background-color: #FFAD9B;
         }
     }
-
-    
-
 }
 
 .form-btn{
@@ -155,4 +150,16 @@
     @media screen and (max-width: 480px) {
         justify-content: center;
     }
+}
+
+.invalid{
+    border: 2px solid #bb3c3c;
+    border-radius: 3px;
+}
+
+.error {
+    padding-left: 20px;
+    color: #8f4141;
+    font-size: 12px;
+    height: 22px;
 }
